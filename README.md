@@ -1,8 +1,8 @@
 Load the script and css files.
 
 ```html
-<link type="text/css" rel="stylesheet" href="flexbox-mobile-buttons.js">
-<script src="flexbox-mobile-buttons.css"></script>
+<link type="text/css" rel="stylesheet" href="flexbox-mobile-buttons.css">
+<script src="flexbox-mobile-buttons.js"></script>
 ```
 
 Create a new instance and include the location for the buttons to embed.
