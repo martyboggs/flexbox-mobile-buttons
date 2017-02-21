@@ -18,7 +18,7 @@ Create your buttons by chaining the optional `row()` method and `button()`.
 
 Special keywords `*UP` `*DOWN` `*LEFT` and `*RIGHT` will load super fast svg arrows.
 
-Include a second parameter to display something besides a string.
+Include a second parameter to display something besides the value (first parameter).
 
 The `fullscreen()` method adds a fullscreen API integration. Include the element you wish to fill your screen.
 
