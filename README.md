@@ -5,12 +5,18 @@ Load the script and css files.
 <script src="flexbox-mobile-buttons.js"></script>
 ```
 
-Create a new instance and include the location for the buttons to embed.
+Create a new instance and include the location for the buttons to embed. Optionally display mobile only and include custom callbacks.
 
 ```javascript
 var fmb = new FlexboxMobileButtons({
 	parent: document.getElementById('canvases'),
-	mobileOnly: false
+	mobileOnly: false,
+	onclick: function (value) {
+
+	},
+	offclick: function (value) {
+
+	}
 });
 ```
 
@@ -30,4 +36,18 @@ fmb.row().button('*UP')
 	.row().button('J', 'FIRE!', 'wide')
 	.fullscreen(renderer.domElement)
 	.init();
+```
+
+By default, the fmb.clicking object will track which buttons are being pressed. Use event delegation in your render function to control your objects.
+
+```javascript
+function render() {
+	if (fmb.clicking.UP) {
+		octopus.position.y += 0.1;
+	}
+
+	updateScene();
+	requestAnimationFrame(render);
+}
+render();
 ```
