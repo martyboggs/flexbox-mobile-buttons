@@ -1,0 +1,47 @@
+.fmb-container {
+	position: absolute;
+	z-index: 2147483647;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.fmb-button {
+	margin: 2px;
+	background: rgba(255, 255, 255, 0.3);
+	opacity: 0.5;
+	border: 0;
+	/*border: 1px solid black;*/
+	display: inline-flex;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+}
+
+.fmb-fullscreen svg {
+	width: 50%;
+}
+
+.fmb-button * {
+	margin: 0;
+	pointer-events: none;
+}
+
+.fmb-row {
+	display: flex;
+}
+
+.fmb-wide {
+	width: 158px;
+}
