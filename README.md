@@ -2,7 +2,7 @@
 
 ## Installation
 
-![Flexbox Mobile Buttons](https://www.github.com/martyboggs/flexbox-mobile-buttons/blob/master/screenshot.jpg?raw=true "flexbox mobile buttons")
+![Flexbox Mobile Buttons](https://raw.githubusercontent.com/martyboggs/flexbox-mobile-buttons/master/screenshot.jpg "flexbox mobile buttons")
 
 Load the script and css files.
 
