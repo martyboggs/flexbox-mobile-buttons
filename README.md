@@ -38,8 +38,9 @@ fmb.row().button('UP')
 	.row().button('LEFT')
 	.button('DOWN')
 	.button('RIGHT')
-	.row().button('J', 'FIRE!', 'wide')
+	.row().button('J', null, 'wide')
 	.fullscreen(renderer.domElement)
+	.pointerLock(renderer.domElement)
 	.init();
 ```
 
@@ -49,11 +50,12 @@ By default, the fmb.clicking object will track which buttons are being pressed. 
 
 ```javascript
 function render() {
-	if (fmb.clicking.UP) {
+
+	if (fmb.clicking.UP) { // <-- Wow! A delegated event!
 		octopus.position.y += 0.1;
 	}
 
-	updateScene();
+	updateScene(camera, renderer);
 	requestAnimationFrame(render);
 }
 render();
