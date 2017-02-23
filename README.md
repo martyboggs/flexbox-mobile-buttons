@@ -12,6 +12,8 @@ Load the script and css files.
 <script src="flexbox-mobile-buttons.js"></script>
 ```
 
+## Start 'er Up
+
 Create a new instance and include the location for the buttons to embed. Optionally display mobile only and include custom callbacks.
 
 ```javascript
@@ -22,6 +24,8 @@ var fmb = new FlexboxMobileButtons({
 	offclick: function (value) {}
 });
 ```
+
+## Create Some Buttons
 
 Create your buttons by chaining the optional `row()` method and `button()`.
 
@@ -39,7 +43,9 @@ fmb.row().button('UP')
 	.init();
 ```
 
-By default, the fmb.clicking object will track which buttons are being pressed. Use event delegation in your render function to control your objects.
+## Use 'Em
+
+By default, the fmb.clicking object will track which buttons are being pressed. Use event delegation in your render function by accessing the `fmb.clicking` object to move your octopi.
 
 ```javascript
 function render() {
