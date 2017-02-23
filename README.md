@@ -1,9 +1,7 @@
 ## Flexbox Mobile Buttons
 simply delicious
 
-<div style="text-align: center">
 ![Flexbox Mobile Buttons](https://raw.githubusercontent.com/martyboggs/flexbox-mobile-buttons/master/screenshot.jpg "flexbox mobile buttons")
-</div>
 
 ## Installation
 
