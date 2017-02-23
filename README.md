@@ -31,7 +31,7 @@ Create your buttons by chaining the optional `row()` method and `button()`.
 
 Special values `UP`, `DOWN`, `LEFT` and `RIGHT` will load super fast svg arrows, but you can override the display with the second parameter.
 
-The `fullscreen()` method adds a Fullscreen API integration. Include the element you wish to fill your screen.
+Use the `fullscreen()` method to add **Fullscreen API** integration or `pointerLock()` to add, you guessed it, **PointerLock API** integration. Include the element you wish to fill your screen.
 
 ```javascript
 fmb.row().button('UP')
