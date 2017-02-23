@@ -11,28 +11,22 @@ Create a new instance and include the location for the buttons to embed. Optiona
 var fmb = new FlexboxMobileButtons({
 	parent: document.getElementById('canvases'),
 	mobileOnly: false,
-	onclick: function (value) {
-
-	},
-	offclick: function (value) {
-
-	}
+	onclick: function (value) {},
+	offclick: function (value) {}
 });
 ```
 
 Create your buttons by chaining the optional `row()` method and `button()`.
 
-Special keywords `*UP` `*DOWN` `*LEFT` and `*RIGHT` will load super fast svg arrows.
+Special values `UP`, `DOWN`, `LEFT` and `RIGHT` will load super fast svg arrows, but you can override the display with the second parameter.
 
-Include a second parameter to display something besides the value (first parameter).
-
-The `fullscreen()` method adds a fullscreen API integration. Include the element you wish to fill your screen.
+The `fullscreen()` method adds a Fullscreen API integration. Include the element you wish to fill your screen.
 
 ```javascript
-fmb.row().button('*UP')
-	.row().button('*LEFT')
-	.button('*DOWN')
-	.button('*RIGHT')
+fmb.row().button('UP')
+	.row().button('LEFT')
+	.button('DOWN')
+	.button('RIGHT')
 	.row().button('J', 'FIRE!', 'wide')
 	.fullscreen(renderer.domElement)
 	.init();
